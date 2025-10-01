@@ -1,7 +1,10 @@
-repo_url: https://github.com/orgs/estrato-notes/repositories
-repo_name: Estrato
+repo_url: https://github.com/orgs/DailyQuest-project/repositories
+repo_name: Daily Quest 
 
-site_name: Estrato - Documentação
+site_name: Daily Quest - Documentação
+site_description: Documentação do Projeto Daily Quest
+site_author: Marcos V Marinho
+
 theme:
   name: material
   logo: assets/logo.png
