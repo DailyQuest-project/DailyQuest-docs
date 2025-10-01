@@ -37,3 +37,4 @@ nav:
     - Backlog: Backlog/backlog.md
     - Critérios de Aceite: Backlog/criterios.md
   - Diagrama de Classes: DiagramaUml/diagrama.md
+  - Protótipo de Alta Fidelidade: prototipo/prototipo.md
