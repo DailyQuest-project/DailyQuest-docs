@@ -1,0 +1,39 @@
+repo_url: https://github.com/orgs/estrato-notes/repositories
+repo_name: Estrato
+
+site_name: Estrato - Documentação
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
+
+  palette:
+    # Modo claro (default)
+    - scheme: default
+      toggle: 
+        icon: material/toggle-switch-off-outline
+        name: Mudar para modo escuro
+      primary: green
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Mudar para modo claro
+      primary: green
+  
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Product Backlog: 
+    - Backlog: Backlog/backlog.md
+    - Critérios de Aceite: Backlog/criterios.md
+  - Diagrama de Classes: DiagramaUml/diagrama.md
