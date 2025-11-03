@@ -37,7 +37,8 @@ theme:
 nav:
   - Home: index.md
   - Product Backlog: 
-    - Backlog: Backlog/backlog.md
-    - Critérios de Aceite: Backlog/criterios.md
-  - Diagrama de Classes: DiagramaUml/diagrama.md
-  - Protótipo de Alta Fidelidade: prototipo/prototipo.md
+    - Backlog: backlog.md
+    - Critérios de Aceite: criterios.md
+  - Diagrama de Classes: diagrama.md
+  - Protótipo de Alta Fidelidade: prototipo.md
+  - Documentação do Banco De Dados: banco.md
