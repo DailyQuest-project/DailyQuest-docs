@@ -6,13 +6,9 @@ Este documento apresenta a evolução do diagrama UML do sistema Daily Quest, de
 
 ---
 
-## Primeira Versão - Diagrama UML
+## Diagrama UML
 
-![Primeira versão do diagrama UML](./assets/UML-HABITICA.png)
-
-## Diagrama UML - Versão Atual
-
-<iframe frameborder="0" style="width:100%;height:1124px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&dark=0#G1b5OH_JKeCO5h0ZbnUwoV-nQI5skubfuD"></iframe>
+<iframe frameborder="0" style="width:100%;height:1124px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Daily-Quest.drawio&transparent=1&dark=0#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1b5OH_JKeCO5h0ZbnUwoV-nQI5skubfuD%26export%3Ddownload" allowtransparency="true"></iframe>
 
 
 # Evolução do Diagrama UML - Sistema Daily Quest
