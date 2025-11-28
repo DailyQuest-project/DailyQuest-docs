@@ -1,0 +1,1286 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentação do Projeto Daily Quest">
+      
+      
+        <meta name="author" content="Marcos V Marinho">
+      
+      
+      
+        <link rel="prev" href="../backlog/">
+      
+      
+        <link rel="next" href="../diagrama/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Critérios de Aceite - Daily Quest - Documentação</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#criterios-de-aceite-daily-quest" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Daily Quest - Documentação" class="md-header__button md-logo" aria-label="Daily Quest - Documentação" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Daily Quest - Documentação
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Critérios de Aceite
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Mudar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Mudar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/orgs/DailyQuest-project/repositories" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Daily Quest
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../backlog/" class="md-tabs__link">
+          
+  
+  
+  Product Backlog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../diagrama/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Diagrama de Classes
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../prototipo/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Protótipo de Alta Fidelidade
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../banco/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Documentação do Banco De Dados
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Daily Quest - Documentação" class="md-nav__button md-logo" aria-label="Daily Quest - Documentação" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Daily Quest - Documentação
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/orgs/DailyQuest-project/repositories" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Daily Quest
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Product Backlog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Product Backlog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backlog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critérios de Aceite
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critérios de Aceite
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visão do Produto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us1-cadastro-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#1 - Cadastro de Usuário
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us2-login-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#2 - Login de Usuário
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us3-criar-habito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#3 - Criar Hábito
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us4-marcar-habito-como-concluido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#4 - Marcar Hábito como Concluído
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us5-visualizar-xp-e-nivel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#5 - Visualizar XP e Nível
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us6-listar-habitos-ativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#6 - Listar Hábitos Ativos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us7-criar-e-gerenciar-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#7 - Criar e Gerenciar Tags
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us8-criar-tarefas-com-deadline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#8 - Criar Tarefas com Deadline
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us9-visualizar-historico-de-progresso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#9 - Visualizar Histórico de Progresso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us10-editar-ou-excluir-habitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#10 - Editar ou Excluir Hábitos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us11-definir-dificuldades-para-habitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#11 - Definir Dificuldades para Hábitos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us12-filtrar-habitos-por-tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#12 - Filtrar Hábitos por Tag
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us13-ver-estatisticas-de-frequencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#13 - Ver Estatísticas de Frequência
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us14-definir-metas-de-sequencia-streaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#14 - Definir Metas de Sequência (Streaks)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us15-receber-notificacoes-de-habitos-pendentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#15 - Receber Notificações de Hábitos Pendentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us16-exportar-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#16 - Exportar Dados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us17-personalizar-perfil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#17 - Personalizar Perfil
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us18-visualizar-conquistasbadges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#18 - Visualizar Conquistas/Badges
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us19-ver-dashboard-com-resumo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#19 - Ver Dashboard com Resumo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us20-ganhar-moedas-virtuais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#20 - Ganhar Moedas Virtuais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us21-modo-escuro-dark-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        US#21 - Modo Escuro (Dark Mode)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diagrama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagrama de Classes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prototipo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Protótipo de Alta Fidelidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../banco/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentação do Banco De Dados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="criterios-de-aceite-daily-quest">CRITÉRIOS DE ACEITE - Daily Quest</h1>
+<h2 id="visao-do-produto"><strong>Visão do Produto</strong></h2>
+<p>Daily Quest é uma plataforma web de gerenciamento de hábitos gamificada que ajuda usuários a criar, acompanhar e manter hábitos saudáveis através de mecânicas de jogos (XP, níveis, conquistas, streaks).</p>
+<hr />
+<h2 id="us1-cadastro-de-usuario"><strong>US#1 - Cadastro de Usuário</strong></h2>
+<p><strong>Como</strong> usuário novo<br />
+<strong>Quero</strong> me cadastrar na plataforma<br />
+<strong>Para</strong> começar a usar o sistema de hábitos</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Formulário deve conter campos obrigatórios: email, senha, nome de usuário</li>
+<li>[ ] Email deve ser único no sistema (validação de duplicata)</li>
+<li>[ ] Senha deve ter mínimo 8 caracteres com validação</li>
+<li>[ ] Validação de formato de email válido</li>
+<li>[ ] Confirmação de senha deve coincidir com senha original</li>
+<li>[ ] Mensagem de sucesso/erro clara para o usuário</li>
+<li>[ ] Redirecionamento automático para página de login após cadastro bem-sucedido</li>
+</ul>
+<hr />
+<h2 id="us2-login-de-usuario"><strong>US#2 - Login de Usuário</strong></h2>
+<p><strong>Como</strong> usuário cadastrado<br />
+<strong>Quero</strong> fazer login<br />
+<strong>Para</strong> acessar minha conta pessoal</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Login deve funcionar com email e senha</li>
+<li>[ ] Validação de credenciais no backend</li>
+<li>[ ] Geração e armazenamento de token JWT para sessão</li>
+<li>[ ] Opção "Lembrar-me" para sessão persistente (opcional)</li>
+<li>[ ] Mensagem de erro clara em caso de credenciais inválidas</li>
+<li>[ ] Redirecionamento para dashboard principal após login bem-sucedido</li>
+</ul>
+<hr />
+<h2 id="us3-criar-habito"><strong>US#3 - Criar Hábito</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> criar um novo hábito<br />
+<strong>Para</strong> começar a acompanhar minhas atividades</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Formulário com campos: título (obrigatório), descrição (opcional), dificuldade</li>
+<li>[ ] Seleção de tipo: Hábito Recorrente ou Tarefa Única</li>
+<li>[ ] Definir frequência (diária, semanal, flexível)</li>
+<li>[ ] Opção de adicionar tags existentes ou criar novas (opcional)</li>
+<li>[ ] Preview da recompensa em XP baseada na dificuldade selecionada</li>
+<li>[ ] Validação de campos obrigatórios com feedback visual</li>
+<li>[ ] Feedback visual de sucesso após criação do hábito</li>
+</ul>
+<hr />
+<h2 id="us4-marcar-habito-como-concluido"><strong>US#4 - Marcar Hábito como Concluído</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> marcar um hábito como concluído<br />
+<strong>Para</strong> registrar meu progresso</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Botão/checkbox visível para marcar conclusão</li>
+<li>[ ] Registro automático da data e hora de conclusão</li>
+<li>[ ] Cálculo e atribuição automática de XP</li>
+<li>[ ] Feedback visual imediato (animação, notificação +XP)</li>
+<li>[ ] Atualização de streak se aplicável ao tipo de hábito</li>
+<li>[ ] Prevenção de conclusão duplicada no mesmo dia (para hábitos diários)</li>
+<li>[ ] Persistência da conclusão no banco de dados</li>
+</ul>
+<hr />
+<h2 id="us5-visualizar-xp-e-nivel"><strong>US#5 - Visualizar XP e Nível</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> visualizar meu nível e experiência atual<br />
+<strong>Para</strong> acompanhar minha evolução</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Barra de progresso de XP sempre visível na interface</li>
+<li>[ ] Nível atual exibido claramente ao lado do nome do usuário</li>
+<li>[ ] Informação "XP atual / XP necessário para próximo nível"</li>
+<li>[ ] Animação visual ao subir de nível</li>
+<li>[ ] Histórico de níveis alcançados acessível no perfil</li>
+<li>[ ] Cálculo correto de XP necessário por nível (progressão matemática)</li>
+<li>[ ] Atualização em tempo real após ganhar XP</li>
+</ul>
+<hr />
+<h2 id="us6-listar-habitos-ativos"><strong>US#6 - Listar Hábitos Ativos</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> ver minha lista de hábitos ativos<br />
+<strong>Para</strong> gerenciar minhas atividades</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Lista ordenada por data de criação ou prioridade configurável</li>
+<li>[ ] Separação visual clara entre Hábitos Recorrentes e Tarefas Únicas</li>
+<li>[ ] Indicador visual de status (concluído hoje/não concluído)</li>
+<li>[ ] Exibir streak atual para hábitos que possuem sequência</li>
+<li>[ ] Exibir deadline para tarefas únicas</li>
+<li>[ ] Opção de alternar visualização para hábitos inativos/arquivados</li>
+<li>[ ] Performance adequada com paginação se necessário</li>
+</ul>
+<hr />
+<h2 id="us7-criar-e-gerenciar-tags"><strong>US#7 - Criar e Gerenciar Tags</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> criar e gerenciar tags<br />
+<strong>Para</strong> categorizar meus hábitos</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Modal/interface para criar nova tag com nome e cor</li>
+<li>[ ] Funcionalidade de editar tags existentes</li>
+<li>[ ] Opção de excluir tags com confirmação de segurança</li>
+<li>[ ] Sugestões de tags pré-definidas (saúde, trabalho, estudo, etc.)</li>
+<li>[ ] Validação para evitar nomes de tags duplicados</li>
+<li>[ ] Limite de caracteres no nome da tag (máximo 20)</li>
+<li>[ ] Preview visual da tag antes de salvar</li>
+</ul>
+<hr />
+<h2 id="us8-criar-tarefas-com-deadline"><strong>US#8 - Criar Tarefas com Deadline</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> criar tarefas únicas com deadline<br />
+<strong>Para</strong> gerenciar atividades pontuais</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Formulário com campos: título, descrição, deadline (obrigatório)</li>
+<li>[ ] Seletor de data e hora para deadline</li>
+<li>[ ] Definir nível de dificuldade (impacta cálculo de XP)</li>
+<li>[ ] Indicador visual de urgência baseado em dias restantes</li>
+<li>[ ] Notificação automática quando prazo está próximo (opcional)</li>
+<li>[ ] Funcionalidade de marcar como concluída</li>
+<li>[ ] Recompensa de XP ao concluir tarefa</li>
+</ul>
+<hr />
+<h2 id="us9-visualizar-historico-de-progresso"><strong>US#9 - Visualizar Histórico de Progresso</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> visualizar meu histórico de progresso<br />
+<strong>Para</strong> acompanhar minha evolução</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Calendário visual mostrando dias com atividades concluídas</li>
+<li>[ ] Lista cronológica de todas as conclusões de hábitos/tarefas</li>
+<li>[ ] Filtro por período (última semana, último mês, último ano)</li>
+<li>[ ] Filtro por hábito específico</li>
+<li>[ ] Estatísticas básicas: total de conclusões, taxa de sucesso</li>
+<li>[ ] Opção de exportação de dados para análise externa (opcional)</li>
+<li>[ ] Gráficos simples de progresso ao longo do tempo</li>
+</ul>
+<hr />
+<h2 id="us10-editar-ou-excluir-habitos"><strong>US#10 - Editar ou Excluir Hábitos</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> editar ou excluir hábitos existentes<br />
+<strong>Para</strong> manter minha lista atualizada</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Botão de "Editar" visível em cada hábito na lista</li>
+<li>[ ] Modal/página de edição com todos os campos preenchidos</li>
+<li>[ ] Validação de campos ao salvar edição</li>
+<li>[ ] Confirmação obrigatória antes de excluir hábito</li>
+<li>[ ] Manutenção do histórico de conclusões ao editar</li>
+<li>[ ] Opção de arquivar hábito ao invés de excluir permanentemente</li>
+<li>[ ] Feedback visual claro de sucesso/erro após operação</li>
+</ul>
+<hr />
+<h2 id="us11-definir-dificuldades-para-habitos"><strong>US#11 - Definir Dificuldades para Hábitos</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> definir dificuldades para meus hábitos<br />
+<strong>Para</strong> ganhar experiência proporcional ao esforço</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Três níveis de dificuldade disponíveis: Fácil, Médio, Difícil</li>
+<li>[ ] XP base diferenciado por dificuldade: Fácil (15 XP), Médio (25 XP), Difícil (40 XP)</li>
+<li>[ ] Indicador visual claro da dificuldade na lista de hábitos</li>
+<li>[ ] Possibilidade de alterar dificuldade de hábitos existentes</li>
+<li>[ ] Preview da quantidade de XP ao criar/editar hábito</li>
+<li>[ ] Cálculo correto implementado no sistema de XP</li>
+<li>[ ] Exibição da dificuldade em todos os locais onde o hábito aparece</li>
+</ul>
+<hr />
+<h2 id="us12-filtrar-habitos-por-tag"><strong>US#12 - Filtrar Hábitos por Tag</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> filtrar hábitos por tag<br />
+<strong>Para</strong> organizar melhor minha visualização</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Dropdown/chips de seleção com todas as tags disponíveis</li>
+<li>[ ] Capacidade de filtrar por múltiplas tags simultaneamente</li>
+<li>[ ] Atualização imediata da lista ao aplicar filtros</li>
+<li>[ ] Indicador visual claro de quais filtros estão ativos</li>
+<li>[ ] Botão para limpar todos os filtros aplicados</li>
+<li>[ ] Contador mostrando quantidade de hábitos filtrados</li>
+<li>[ ] Performance adequada mesmo com muitas tags</li>
+</ul>
+<hr />
+<h2 id="us13-ver-estatisticas-de-frequencia"><strong>US#13 - Ver Estatísticas de Frequência</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> ver estatísticas detalhadas de frequência<br />
+<strong>Para</strong> entender meus padrões de comportamento</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Gráfico de frequência de conclusão por dia da semana</li>
+<li>[ ] Análise de horários mais produtivos do usuário</li>
+<li>[ ] Ranking de hábitos mais/menos cumpridos</li>
+<li>[ ] Taxa de sucesso por categoria/tag de hábitos</li>
+<li>[ ] Gráficos visuais diversos (barras, pizza, linhas)</li>
+<li>[ ] Comparação de desempenho entre períodos diferentes</li>
+<li>[ ] Sistema de insights automáticos baseado nos dados (opcional)</li>
+</ul>
+<hr />
+<h2 id="us14-definir-metas-de-sequencia-streaks"><strong>US#14 - Definir Metas de Sequência (Streaks)</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> acompanhar sequências consecutivas de conclusões<br />
+<strong>Para</strong> me motivar a manter consistência</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Contador automático de dias consecutivos (streak atual)</li>
+<li>[ ] Indicador visual de streak ativo (ícone 🔥 ou similar)</li>
+<li>[ ] Configuração de meta de streak por hábito</li>
+<li>[ ] Alerta/notificação quando streak está em risco de quebrar</li>
+<li>[ ] Histórico de maior streak já alcançada por hábito</li>
+<li>[ ] Sistema de bônus de XP por milestones de streak (7, 30, 100 dias)</li>
+<li>[ ] Reset automático de streak quando hábito não é concluído</li>
+</ul>
+<hr />
+<h2 id="us15-receber-notificacoes-de-habitos-pendentes"><strong>US#15 - Receber Notificações de Hábitos Pendentes</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> receber lembretes de hábitos não concluídos<br />
+<strong>Para</strong> não esquecer de minhas atividades</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Configuração de horário de lembrete individual por hábito</li>
+<li>[ ] Notificações in-app visíveis na interface</li>
+<li>[ ] Opção de notificações por email (opcional)</li>
+<li>[ ] Sistema de push notifications se aplicável (opcional)</li>
+<li>[ ] Configuração global para ligar/desligar todas as notificações</li>
+<li>[ ] Funcionalidade de snooze para adiar lembretes</li>
+<li>[ ] Personalização de mensagem de lembrete</li>
+</ul>
+<hr />
+<h2 id="us16-exportar-dados"><strong>US#16 - Exportar Dados</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> exportar meus dados pessoais<br />
+<strong>Para</strong> backup ou análise em ferramentas externas</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Formatos de exportação disponíveis: JSON e CSV</li>
+<li>[ ] Inclusão de dados: hábitos, conclusões, estatísticas, tags</li>
+<li>[ ] Botão de exportação facilmente acessível no perfil</li>
+<li>[ ] Download automático do arquivo após processamento</li>
+<li>[ ] Confirmação visual de que exportação foi bem-sucedida</li>
+<li>[ ] Limite de frequência para prevenir abuso (máximo 1x por dia)</li>
+<li>[ ] Arquivo gerado deve estar formatado corretamente</li>
+</ul>
+<hr />
+<h2 id="us17-personalizar-perfil"><strong>US#17 - Personalizar Perfil</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> personalizar informações do meu perfil<br />
+<strong>Para</strong> tornar a experiência mais pessoal</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Alteração de nome de usuário com validação de unicidade</li>
+<li>[ ] Upload de avatar/foto de perfil com redimensionamento automático</li>
+<li>[ ] Alteração de email com processo de verificação</li>
+<li>[ ] Alteração de senha exigindo senha atual para confirmação</li>
+<li>[ ] Campo de bio/descrição pessoal (máximo 200 caracteres)</li>
+<li>[ ] Configuração de preferências de idioma da interface</li>
+<li>[ ] Configuração de timezone para horários corretos</li>
+<li>[ ] Validação completa de todos os campos modificados</li>
+</ul>
+<hr />
+<h2 id="us18-visualizar-conquistasbadges"><strong>US#18 - Visualizar Conquistas/Badges</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> ver conquistas desbloqueadas baseadas no meu progresso<br />
+<strong>Para</strong> me sentir recompensado pelo esforço</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Galeria com todas as conquistas disponíveis no sistema</li>
+<li>[ ] Indicação visual clara entre badges desbloqueadas e bloqueadas</li>
+<li>[ ] Conquistas variadas: primeira conclusão, streak 7 dias, nível 10, etc.</li>
+<li>[ ] Animação especial ao desbloquear nova conquista</li>
+<li>[ ] Notificação push/popup quando conquista é obtida</li>
+<li>[ ] XP bônus automático ao desbloquear conquista importante</li>
+<li>[ ] Barra de progresso mostrando progresso para próximas conquistas</li>
+</ul>
+<hr />
+<h2 id="us19-ver-dashboard-com-resumo"><strong>US#19 - Ver Dashboard com Resumo</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> visualizar dashboard com métricas consolidadas<br />
+<strong>Para</strong> análise rápida do meu progresso temporal</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Cards com métricas principais: taxa de sucesso, streak atual, XP total</li>
+<li>[ ] Gráfico de conclusões de hábitos ao longo do tempo</li>
+<li>[ ] Comparação automática com períodos anteriores (% de melhora/piora)</li>
+<li>[ ] Lista dos hábitos mais cumpridos no período selecionado</li>
+<li>[ ] Indicador de metas vs realizado no período</li>
+<li>[ ] Filtros por período: semana atual, mês atual, personalizado</li>
+<li>[ ] Design responsivo que funciona em dispositivos móveis</li>
+</ul>
+<hr />
+<h2 id="us20-ganhar-moedas-virtuais"><strong>US#20 - Ganhar Moedas Virtuais</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> acumular moedas virtuais ao completar atividades<br />
+<strong>Para</strong> ter sistema de recompensas adicional</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Moedas ganhas automaticamente junto com XP</li>
+<li>[ ] Quantidade de moedas proporcional à dificuldade do hábito</li>
+<li>[ ] Contador de moedas sempre visível na interface principal</li>
+<li>[ ] Histórico detalhado de ganhos e gastos de moedas</li>
+<li>[ ] Base para futura loja de recompensas virtuais (opcional para MVP)</li>
+<li>[ ] Persistência correta das moedas no banco de dados</li>
+<li>[ ] Sistema balanceado para evitar inflação de moedas</li>
+</ul>
+<hr />
+<h2 id="us21-modo-escuro-dark-mode"><strong>US#21 - Modo Escuro (Dark Mode)</strong></h2>
+<p><strong>Como</strong> usuário logado<br />
+<strong>Quero</strong> alternar entre modo claro e escuro<br />
+<strong>Para</strong> personalizar minha experiência visual</p>
+<p><strong>Critérios de Aceite:</strong></p>
+<ul>
+<li>[ ] Toggle/switch facilmente acessível para alternar modos</li>
+<li>[ ] Persistência da preferência entre sessões do usuário</li>
+<li>[ ] Todos os componentes da interface adaptados ao modo escuro</li>
+<li>[ ] Contraste adequado para garantir acessibilidade</li>
+<li>[ ] Transição suave e visualmente agradável entre modos</li>
+<li>[ ] Ícone indicativo claro do modo atualmente ativo</li>
+<li>[ ] Opcional: sincronização com preferência do sistema operacional</li>
+</ul>
+<hr />
+<p><em>Documento atualizado em: 30 de setembro de 2025</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

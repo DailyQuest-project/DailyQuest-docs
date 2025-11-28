@@ -1,0 +1,1027 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentação do Projeto Daily Quest">
+      
+      
+        <meta name="author" content="Marcos V Marinho">
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../criterios/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Backlog - Daily Quest - Documentação</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#product-backlog-daily-quest" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Daily Quest - Documentação" class="md-header__button md-logo" aria-label="Daily Quest - Documentação" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Daily Quest - Documentação
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Backlog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Mudar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Mudar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/orgs/DailyQuest-project/repositories" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Daily Quest
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Product Backlog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../diagrama/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Diagrama de Classes
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../prototipo/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Protótipo de Alta Fidelidade
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../banco/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Documentação do Banco De Dados
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Daily Quest - Documentação" class="md-nav__button md-logo" aria-label="Daily Quest - Documentação" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Daily Quest - Documentação
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/orgs/DailyQuest-project/repositories" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Daily Quest
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Product Backlog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Product Backlog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backlog
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backlog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visão do Produto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backlog-completo-21-user-stories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BACKLOG COMPLETO - 21 User Stories
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#priorizacao-moscow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PRIORIZAÇÃO MoSCoW
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PRIORIZAÇÃO MoSCoW">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#must-have-essenciais-para-mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MUST HAVE (Essenciais para MVP)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#should-have-importantes-mas-nao-criticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SHOULD HAVE (Importantes mas não críticos)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#could-have-desejaveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        COULD HAVE (Desejáveis)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wont-have-fora-do-escopo-mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WON'T HAVE (Fora do escopo MVP)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roadmap-de-releases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Roadmap de Releases
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Roadmap de Releases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#release-10-mvp-30112024" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Release 1.0 - MVP (30/11/2024)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#release-11-melhorias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Release 1.1 - Melhorias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#release-20-features-avancadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Release 2.0 - Features Avançadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../criterios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critérios de Aceite
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diagrama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagrama de Classes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prototipo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Protótipo de Alta Fidelidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../banco/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentação do Banco De Dados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="product-backlog-daily-quest">PRODUCT BACKLOG - Daily Quest</h1>
+<h2 id="visao-do-produto"><strong>Visão do Produto</strong></h2>
+<p>Daily Quest é uma plataforma web de gerenciamento de hábitos gamificada que ajuda usuários a criar, acompanhar e manter hábitos saudáveis através de mecânicas de jogos (XP, níveis, conquistas, streaks).</p>
+<hr />
+<h2 id="backlog-completo-21-user-stories"><strong>BACKLOG COMPLETO - 21 User Stories</strong></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>User Story</th>
+<th>Prioridade MoSCoW</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US#1</td>
+<td>Como usuário novo, quero me cadastrar na plataforma para começar a usar o sistema de hábitos</td>
+<td>MUST HAVE</td>
+</tr>
+<tr>
+<td>US#2</td>
+<td>Como usuário cadastrado, quero fazer login para acessar minha conta pessoal</td>
+<td>MUST HAVE</td>
+</tr>
+<tr>
+<td>US#3</td>
+<td>Como usuário logado, quero criar um novo hábito para começar a acompanhar minhas atividades</td>
+<td>MUST HAVE</td>
+</tr>
+<tr>
+<td>US#4</td>
+<td>Como usuário logado, quero marcar um hábito como concluído para registrar meu progresso</td>
+<td>MUST HAVE</td>
+</tr>
+<tr>
+<td>US#5</td>
+<td>Como usuário logado, quero visualizar meu nível e experiência atual para acompanhar minha evolução</td>
+<td>MUST HAVE</td>
+</tr>
+<tr>
+<td>US#6</td>
+<td>Como usuário logado, quero ver minha lista de hábitos ativos para gerenciar minhas atividades</td>
+<td>MUST HAVE</td>
+</tr>
+<tr>
+<td>US#7</td>
+<td>Como usuário logado, quero criar e gerenciar tags para categorizar meus hábitos</td>
+<td>MUST HAVE</td>
+</tr>
+<tr>
+<td>US#8</td>
+<td>Como usuário logado, quero criar tarefas únicas com deadline para gerenciar atividades pontuais</td>
+<td>MUST HAVE</td>
+</tr>
+<tr>
+<td>US#9</td>
+<td>Como usuário logado, quero visualizar meu histórico de progresso para acompanhar minha evolução</td>
+<td>MUST HAVE</td>
+</tr>
+<tr>
+<td>US#10</td>
+<td>Como usuário logado, quero editar ou excluir hábitos existentes para manter minha lista atualizada</td>
+<td>MUST HAVE</td>
+</tr>
+<tr>
+<td>US#11</td>
+<td>Como usuário logado, quero definir dificuldades para meus hábitos para ganhar experiência proporcional</td>
+<td>MUST HAVE</td>
+</tr>
+<tr>
+<td>US#12</td>
+<td>Como usuário logado, quero filtrar hábitos por tag para organizar melhor minha visualização</td>
+<td>MUST HAVE</td>
+</tr>
+<tr>
+<td>US#13</td>
+<td>Como usuário logado, quero ver estatísticas de frequência para entender meus padrões</td>
+<td>COULD HAVE</td>
+</tr>
+<tr>
+<td>US#14</td>
+<td>Como usuário logado, quero definir metas de sequência (streaks) para me motivar</td>
+<td>MUST HAVE</td>
+</tr>
+<tr>
+<td>US#15</td>
+<td>Como usuário logado, quero receber notificações de hábitos pendentes para não esquecer</td>
+<td>COULD HAVE</td>
+</tr>
+<tr>
+<td>US#16</td>
+<td>Como usuário logado, quero exportar meus dados para backup ou análise</td>
+<td>COULD HAVE</td>
+</tr>
+<tr>
+<td>US#17</td>
+<td>Como usuário logado, quero personalizar meu perfil para tornar a experiência mais pessoal</td>
+<td>COULD HAVE</td>
+</tr>
+<tr>
+<td>US#18</td>
+<td>Como usuário logado, quero visualizar conquistas/badges baseadas no meu progresso para me sentir recompensado</td>
+<td>MUST HAVE</td>
+</tr>
+<tr>
+<td>US#19</td>
+<td>Como usuário logado, quero ver um dashboard com resumo semanal/mensal para análise temporal</td>
+<td>MUST HAVE</td>
+</tr>
+<tr>
+<td>US#20</td>
+<td>Como usuário logado, quero ganhar moedas virtuais ao completar hábitos para gastar em recompensas</td>
+<td>SHOULD HAVE</td>
+</tr>
+<tr>
+<td>US#21</td>
+<td>Como usuário logado, quero um modo escuro (dark mode) para personalizar minha experiência</td>
+<td>SHOULD HAVE</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="priorizacao-moscow"><strong>PRIORIZAÇÃO MoSCoW</strong></h2>
+<h3 id="must-have-essenciais-para-mvp"><strong>MUST HAVE (Essenciais para MVP)</strong></h3>
+<p>US#1, US#2, US#3, US#4, US#5, US#6, US#7, US#8, US#9, US#10, US#11, US#12, US#14, US#18, US#19</p>
+<p><strong>Total: 15 User Stories</strong></p>
+<p><strong>Justificativa:</strong> Conjunto mínimo para ter uma aplicação funcional e diferenciada. Cobre autenticação, CRUD completo de hábitos e tarefas, gamificação básica (XP, níveis, streaks, conquistas), organização (tags e filtros) e analytics (histórico e dashboard).</p>
+<hr />
+<h3 id="should-have-importantes-mas-nao-criticos"><strong>SHOULD HAVE (Importantes mas não críticos)</strong></h3>
+<p>US#20, US#21</p>
+<p><strong>Total: 2 User Stories</strong></p>
+<p><strong>Justificativa:</strong> Sistema de moedas virtuais e dark mode adicionam valor significativo à experiência do usuário, mas o sistema funciona completamente sem eles. Podem ser implementados após o MVP estar estável.</p>
+<hr />
+<h3 id="could-have-desejaveis"><strong>COULD HAVE (Desejáveis)</strong></h3>
+<p>US#13, US#15, US#16, US#17</p>
+<p><strong>Total: 4 User Stories</strong></p>
+<p><strong>Justificativa:</strong> Features que melhoram a experiência (estatísticas avançadas, notificações, exportação de dados, personalização de perfil) mas podem ser implementadas em versões futuras sem comprometer a proposta de valor do MVP.</p>
+<hr />
+<h3 id="wont-have-fora-do-escopo-mvp"><strong>WON'T HAVE (Fora do escopo MVP)</strong></h3>
+<ul>
+<li>Integração com calendários externos</li>
+<li>Gamificação social (amigos, rankings, desafios)</li>
+<li>Modo offline</li>
+<li>App mobile nativo</li>
+<li>Integração com wearables</li>
+<li>Sistema de recompensas complexo (loja de itens)</li>
+<li>Grupos de estudo/hábitos compartilhados</li>
+<li>Integração com APIs externas (Notion, Trello, etc)</li>
+</ul>
+<hr />
+<h2 id="roadmap-de-releases"><strong>Roadmap de Releases</strong></h2>
+<h3 id="release-10-mvp-30112024"><strong>Release 1.0 - MVP (30/11/2024)</strong></h3>
+<ul>
+<li>15 User Stories (MUST HAVE)</li>
+<li>Foco: Funcionalidade core + gamificação básica</li>
+</ul>
+<h3 id="release-11-melhorias"><strong>Release 1.1 - Melhorias</strong></h3>
+<ul>
+<li>US#20, US#21 (SHOULD HAVE)</li>
+<li>Foco: UX e personalização</li>
+</ul>
+<h3 id="release-20-features-avancadas"><strong>Release 2.0 - Features Avançadas</strong></h3>
+<ul>
+<li>US#13, US#15, US#16, US#17 (COULD HAVE)</li>
+<li>Foco: Analytics e comunicação</li>
+</ul>
+<hr />
+<p><strong>Versão:</strong> 1.0<br />
+<strong>Data:</strong> 30/09/2025<br />
+<strong>Última Atualização:</strong> 30/09/2025</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
