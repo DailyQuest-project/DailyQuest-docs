@@ -1,56 +1,50 @@
 # Daily Quest
 
-## Sobre o Projeto
+Plataforma de hábitos gamificada que transforma sua rotina em uma aventura RPG.
 
-Daily Quest é uma plataforma web de gerenciamento de hábitos gamificada que transforma sua rotina diária em uma aventura de RPG. O projeto aplica mecânicas de jogos (experiência, níveis, conquistas, sequências) para motivar usuários a criar e manter hábitos saudáveis de forma consistente.
+## Contexto
 
-## Contexto e Evolução
+Evolução de um projeto da disciplina de Orientação a Objetos, inspirado no Habitica. A versão atual implementa:
 
-Este projeto representa uma evolução significativa de um trabalho anterior desenvolvido na disciplina de Orientação a Objetos, originalmente baseado no conceito do Habitica (plataforma existente de hábitos gamificados).
-
-Na versão atual, o Daily Quest se distancia do projeto original ao implementar:
-- Nova arquitetura de microserviços com FastAPI
-- Sistema de gamificação expandido e personalizado
-- Interface moderna e intuitiva
-- Funcionalidades exclusivas de analytics e progressão
+- Arquitetura de microserviços com FastAPI
+- Sistema de gamificação expandido
+- Interface moderna com Next.js
+- Analytics e progressão personalizados
 - Sistema flexível de frequência de hábitos
-- Diferenciação clara entre hábitos recorrentes e tarefas únicas
 
-O projeto foi renomeado para **Daily Quest** para refletir sua identidade própria e as novas direções tomadas no desenvolvimento.
+## Arquitetura
 
-## Objetivos
+| Serviço | Tecnologia | Porta |
+|---------|------------|-------|
+| **Frontend** | Next.js 14, React 19, TypeScript, TailwindCSS | 3000 |
+| **API** | FastAPI, SQLAlchemy, Alembic | 8000 |
+| **Auth** | FastAPI, JWT | 8001 |
+| **Database** | PostgreSQL 15 | 5432 |
 
-O Daily Quest tem como objetivo principal auxiliar usuários a:
-- Criar e manter hábitos saudáveis de forma consistente
-- Visualizar seu progresso através de métricas claras
-- Sentir-se motivado através de recompensas e conquistas
-- Organizar suas atividades de forma eficiente
-- Acompanhar sua evolução ao longo do tempo
+## Usuários de Teste
 
-## Tecnologias
+| Usuário | Email | Senha | Descrição |
+|---------|-------|-------|-----------|
+| `testuser` | test@example.com | `testpass123` | Usuário básico para testes |
+| `demo` | demo@dailyquest.com | `demo123` | Usuário avançado (Nível 8, histórico de 15 dias) |
 
-### Backend
-- **FastAPI**: Framework web moderno e performático
-- **PostgreSQL**: Banco de dados relacional
-- **SQLAlchemy**: ORM para Python
-- **Alembic**: Gerenciamento de migrations
-- **Docker**: Containerização
+## Quick Start
 
-### Frontend
-- **React**: Biblioteca para interfaces
-- **TypeScript**: Tipagem estática
-- **Tailwind CSS**: Framework CSS utility-first
+```bash
+# Subir todos os serviços
+docker compose up --build
 
-### DevOps
-- **Docker Compose**: Orquestração de containers
-- **GitHub Actions**: CI/CD
-- **PgAdmin**: Administração do banco de dados
+# Acessar
+# Frontend: http://localhost:3000
+# API Docs: http://localhost:8000/docs
+# Auth: http://localhost:8001/docs
+```
 
-## Funcionalidades Principais
+## Funcionalidades
 
 ### Sistema de Hábitos
-- Criação de hábitos recorrentes com frequências configuráveis
-- Tarefas únicas com deadlines
+- Hábitos recorrentes com frequências configuráveis (diário, semanal, etc.)
+- Tarefas únicas (To-Dos) com deadline
 - Sistema de tags para organização
 - Filtros avançados
 
@@ -61,8 +55,8 @@ O Daily Quest tem como objetivo principal auxiliar usuários a:
 - Sistema de streaks (sequências)
 - Moedas virtuais
 
-### Analytics
-- Dashboard com métricas de progresso
+### Dashboard e Analytics
+- Métricas de progresso
 - Histórico completo de conclusões
 - Estatísticas de frequência e padrões
 - Visualizações gráficas
@@ -74,17 +68,22 @@ O Daily Quest tem como objetivo principal auxiliar usuários a:
 
 ## Cronograma
 
-**Início:** 28/09/2024  
-**Entrega MVP:** 30/11/2024  
+| Marco | Data |
+|-------|------|
+| Início do projeto | 28/09/2024 |
+| Entrega MVP | 30/11/2024 |
+
 **Metodologia:** Sprints semanais
 
-## Status do Projeto
+## Repositórios
 
-🚧 Em desenvolvimento ativo - MVP em construção
+- `DailyQuest-web` - Frontend Next.js
+- `DailyQuest-api` - Backend principal
+- `DailyQuest-auth` - Serviço de autenticação
+- `DailyQuest-docs` - Documentação MkDocs
 
-## Como Contribuir
+## Status
 
-Contribuições são bem-vindas! Por favor, consulte o Guia de Contribuição para mais detalhes.
+✅ MVP Concluído - Novembro/2024
 
-**Versão:** 1.0  
-**Última Atualização:** 30/09/2025
+**Última Atualização:** 28/11/2024
